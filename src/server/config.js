@@ -23,7 +23,7 @@ const colors = [
 
 const options = {
 	DEV: true,
-	PORT: process.env.PORT || 5000,
+	PORT: process.env.PORT || 80,
 	ROOT: __dirname.replace(/(\/dist|\/dist\/modules)/g,'/public')
 };
 
