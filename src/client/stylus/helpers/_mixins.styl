@@ -1,0 +1,7 @@
+opacity(n)
+  -khtml-opacity n
+  -moz-opacity n
+  opacity n
+  if $suppot-ie
+    -ms-filter unquote('"progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')"')
+    filter unquote('alpha(opacity=' + round(n * 100) + ')')

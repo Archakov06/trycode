@@ -1,0 +1,74 @@
+.header
+	display block
+	padding 10px
+	position absolute
+	top 0
+	box-shadow 0 2px 20px rgba(0, 0, 0, 0.07)
+	width 100%
+	box-sizing border-box
+	z-index 1
+	
+	&__logo
+		display block
+		float left
+		margin 20px
+		
+	&__autorun-checkbox
+		cursor pointer
+		
+	&__auth
+		display block
+		float right
+		margin 10px
+		
+		
+		ul
+			li
+				display inline-block
+				margin-left 5px
+					
+				#select-mode
+					
+					select
+						padding 13px 30px
+						-webkit-appearance: button;
+						-moz-appearance: button;
+						-webkit-user-select: none;
+						-moz-user-select: none;
+						text-align center
+
+					&:after
+						content ''
+						display inline-block
+						pointer-events none
+						position relative
+						left -30px
+						top -1px
+						width 0
+						height 0
+						transform rotate(180deg)
+						border-style solid
+						border-width 0 5px 5px 5px
+						border-color transparent transparent lighten($chat-author-color,45%) transparent
+	
+	input.button
+		padding 12px 25px 12px 40px
+
+	.button--save
+		padding: 14px 25px
+		
+		svg
+			height 12px
+			width 12px
+			margin-right 7px
+			
+	#save
+		g
+			path
+				fill #fff
+	
+	#link-svg
+		position absolute
+		width 12px
+		height 12px
+		margin 15px 20px

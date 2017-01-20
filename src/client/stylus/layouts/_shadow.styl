@@ -1,0 +1,26 @@
+.shadow-block
+	display block
+	position fixed
+	width 100%
+	height 100%
+	background-color #f6f6f6
+	z-index 99
+	
+	.center
+		display block
+		position absolute
+		left 50%
+		top 50%
+		transform translate(-50%,-50%)
+		
+	.center-loading
+		svg
+			height 50px
+			width 180px
+			
+		span
+			display block
+			margin-top 10px
+			text-align center
+			font-size 18px
+			color $chat-author-color

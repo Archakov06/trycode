@@ -1,0 +1,61 @@
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+border-bottom-right-radius(n)
+  -webkit-border-bottom-right-radius n
+  -moz-border-bottom-right-radius n
+  border-bottom-right-radius n
+
+border-top-right-radius(n)
+  -webkit-border-top-right-radius n
+  -moz-border-top-right-radius n
+  border-top-right-radius n
+
+border-bottom-left-radius(n)
+  -webkit-border-bottom-left-radius n
+  -moz-border-bottom-left-radius n
+  border-bottom-left-radius n
+
+border-top-left-radius(n)
+  -webkit-border-top-left-radius n
+  -moz-border-top-left-radius n
+  border-top-left-radius n
+
+clearfix()
+  zoom 1
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both
+
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
+
+transform()
+  -moz-transform arguments
+  -webkit-transform arguments
+  -o-transform arguments
+  -khtml-transform arguments
+
+animate()
+  -moz-animate arguments
+  -webkit-animate arguments
+  -o-animate arguments
+  -khtml-animate arguments
+  animate arguments
+
+.clearfix:before, .clearfix:after
+  content ""
+  display table
+
+.clearfix:after
+  clear both
+ 
+.clearfix
+  zoom 1

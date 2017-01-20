@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400&subset=latin,cyrillic,cyrillic-ext')
+
+@import 'helpers/_variables.styl'
+@import 'helpers/_triangle.styl'
+@import 'helpers/_button.styl'
+@import 'helpers/_cross.styl'
+@import 'helpers/_width-height.styl'
+@import 'helpers/_reset.styl'
+@import 'helpers/_mixins.styl'
+@import 'helpers/_tooltip.styl'
+
+global-reset()
+normalize-css()
+
+
+html
+	box-sizing border-box
+	
+*, *:before, *:after
+	box-sizing inherit
+
+body
+	background-color $bg-color
+	color $text-color
+	font-size 14px
+	letter-spacing $letter-spacing
+	font-family 'Ubuntu', Helvetica, Tahoma
+	height 100%
+	
+.wrapper
+	width 100%
+	height 100%
+	position relative
+	top 85px
+	
+@import 'layouts/_header.styl'
+@import 'layouts/_sidebar.styl'
+@import 'layouts/_editor.styl'
+@import 'layouts/_shadow.styl'
+@import 'layouts/_error.styl'
+@import 'layouts/_searchbox.styl'
+
+.viewer
+	display inline-block
+	float left
+	
+	iframe
+		width 100%
+
+#logo
+	path:nth-child(1)
+		fill $text-color
+		
+	path:nth-child(2)
+		fill $bg-color
+		
+	path:nth-child(3)
+		fill $text-color
+		

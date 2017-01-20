@@ -1,0 +1,41 @@
+{
+  "name": "trycode",
+  "version": "1.0.0",
+  "description": "Open-source realtime collaborative code editor on Babel, NodeJS, AngularJS, Socket.io, ACE",
+  "scripts": {
+    "start": "node ./dist/run.js",
+    "build": "babel ./src/server -d ./dist",
+    "run": "node ./dist/run.js",
+    "build-run": "babel ./src/server -d ./dist && node ./dist/run.js",
+    "sprite": "svg-sprite-generate -d public/img/svg -o public/img/sprites.svg"
+  },
+  "author": "Archakov Dennis",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.8",
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.4",
+    "css-loader": "^0.26.0",
+    "uglify": "^0.1.5",
+    "url-loader": "^0.5.7",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.4.0",
+    "uglify-loader": "^1.3.0",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "knex": "^0.12.6",
+    "md5": "^2.2.1",
+    "mysql": "^2.12.0",
+    "restify": "^4.3.0",
+    "restify-cookies": "^0.2.2",
+    "socket.io": "^1.7.1",
+    "unirest": "^0.5.1"
+  }
+}

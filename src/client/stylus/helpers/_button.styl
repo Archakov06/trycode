@@ -1,0 +1,24 @@
+.button
+	display inline-block
+	padding 12px 25px
+	text-align center
+	border 0
+	background-color transparent
+	border-radius 30px
+	letter-spacing $letter-spacing
+	font-weight 100
+	cursor pointer
+	
+	&--white
+		background-color lighten($sidebar-color,60%)
+		color darken($sidebar-color, 70%)
+		
+		&:hover
+			background-color lighten($sidebar-color,40%)
+	
+	&--black
+		background-color lighten($text-color,0%)
+		color $bg-color
+	
+		&:hover
+			background-color lighten($text-color,10%)

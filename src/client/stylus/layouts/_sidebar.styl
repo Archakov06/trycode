@@ -1,0 +1,104 @@
+.sidebar
+	display inline-block
+	float left
+	width 20%
+	
+	&__icon
+		display inline-block
+		vertical-align bottom
+		margin-right 7px
+
+		&--users
+			width 16px
+			margin-right 5px
+			filter grayscale(100%)
+			-webkit-filter grayscale(100%)
+			
+		&--chat
+			width 14px
+			margin-right 7px
+			filter grayscale(100%)
+			-webkit-filter grayscale(100%)
+			
+		&--star
+			float right
+			width 14px
+			
+			img
+				width 14px
+	
+	&__title
+		padding 20px 30px
+		color darken($sidebar-color, 70%)
+		background-color lighten($sidebar-color,100%)
+		text-transform uppercase
+		font-weight bold
+		font-size 12px
+		
+	&__online-users
+		padding 0
+		
+		li
+			padding 15px 30px
+			cursor pointer
+			background-color lighten($sidebar-color,60%)
+			
+			&:hover
+				background-color #fff
+			
+			&.online:before
+				display inline-block
+				content ''
+				width 6px
+				height 6px
+				border-radius 30px
+				background-color #30BE04
+				position relative
+				top -3px
+				margin-right 10px
+
+.chat
+	background-color $bg-color
+	
+	ul
+		padding 0 20px
+		height 400px
+		overflow auto
+	
+		.row
+			padding 5px 0 10px
+			
+		.author
+			color darken($sidebar-color,30%)
+			
+		time
+			display inline-block
+			float right
+			font-size 12px
+			vertical-align middle
+			color darken($sidebar-color,20%)
+			
+		.chat__text
+			padding 10px 15px
+			border-radius 4px
+			line-height 22px
+			background-color lighten($sidebar-color,60%)
+			word-wrap break-word
+			
+			b
+				font-weight 600
+				color #000
+		
+	textarea
+		border 0
+		border-top 1px solid #f3f3f3
+		width 100%
+		background-color $bg-color
+		padding 10px
+		outline none
+		color darken($sidebar-color, 70%)
+		box-sizing border-box
+		line-height 20px
+		letter-spacing .2px
+		resize none
+		
