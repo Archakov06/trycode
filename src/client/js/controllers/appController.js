@@ -187,7 +187,10 @@ export default class AppController {
 		// Следим за изменениями в коде
 		_this.$socket.on('client:editor:change', (data) => {
 			// Вносим изменения в коде
-			_this.setCode( data );
+			if (_this.$scope.currentCID == data.cid) {
+				_this.setCode( data );
+				console.log(data);
+			}
 		});
 
 		window.onresize = resizeEditor;
