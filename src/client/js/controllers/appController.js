@@ -55,6 +55,15 @@ export default class AppController {
 			readOnly: true
 		});
 
+	    	_this.$scope.editor.commands.addCommand({
+			name: 'run_code',
+			bindKey: {win: 'Ctrl+Enter', mac: 'Command+Enter'},
+				exec: function(editor) {
+                                this.writeCode();
+			},
+			readOnly: true
+		});
+
 		_this.$scope.debounceEditor = null;
 		_this.$scope.waitEditor = null;
 		_this.$scope.isSaving = false;
